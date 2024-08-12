@@ -159,8 +159,6 @@ body { background: var(--smoky-black); }
 
 
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -828,6 +826,12 @@ main {
   line-height: 1.6;
 }
 
+.timeline-text li {
+  list-style-type:disc;
+  margin-left: 20px;
+}
+
+
 
 /**
  * skills 
@@ -1113,7 +1117,18 @@ main {
   line-height: 1.6;
 }
 
+.greeting {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
 
+.greeting.fade-in {
+  opacity: 1;
+}
+
+.greeting.fade-out {
+  opacity: 0;
+}
 
 
 
@@ -1141,6 +1156,25 @@ main {
 }
 
 .contact-form { margin-bottom: 10px; }
+
+/* Form Submission popup */
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Change this to match your website's color theme */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.popup.show {
+  opacity: 1;
+}
 
 .form-title { margin-bottom: 20px; }
 

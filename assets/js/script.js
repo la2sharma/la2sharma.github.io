@@ -157,3 +157,80 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+//Greetings Hello in different languages
+document.addEventListener('DOMContentLoaded', function() {
+  const greetings = ['Hello!', 'Namaste!', 'Hola!', 'Bonjour!', 'Hallo!', 'Ciao!', 'ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ', 'こんにちは!', '안녕하세요!', '你好!', 'Привет!', 'مرحبا!',
+    'Olá!', 'Hej!', 'Ahoj!', 'Merhaba!', 'Γειά σου!', 'שלום!', 'नमस्ते!', 'สวัสดี!', 'Selam!', 'Salut!'];
+  const greetingElement = document.querySelector('.greeting');
+  let index = 0;
+  let charIndex = 0;
+  let currentGreeting = greetings[index];
+
+  function typeGreeting() {
+    if (charIndex < currentGreeting.length) {
+      greetingElement.textContent += currentGreeting.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeGreeting, 100); // Typing speed
+    } else {
+      setTimeout(() => {
+        greetingElement.classList.remove('fade-in');
+        setTimeout(() => {
+          greetingElement.textContent = '';
+          greetingElement.classList.add('fade-in');
+          index = (index + 1) % greetings.length;
+          currentGreeting = greetings[index];
+          charIndex = 0;
+          typeGreeting();
+        }, 500); // Time for fade-out effect
+      }, 2000); // Time to display the full greeting
+    }
+  }
+
+  typeGreeting();
+});
+
+// Form submit popup
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('[data-form]');
+  const popup = document.createElement('div');
+  popup.classList.add('popup');
+  document.body.appendChild(popup);
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        popup.textContent = 'Thanks, The form was submitted successfully.';
+        popup.classList.add('show');
+        setTimeout(() => {
+          popup.classList.remove('show');
+        }, 5000);
+        form.reset(); // Clear the form content
+      } else {
+        popup.textContent = 'Oops! There was a problem submitting your form.';
+        popup.classList.add('show');
+        setTimeout(() => {
+          popup.classList.remove('show');
+        }, 5000);
+      }
+    })
+    .catch(error => {
+      popup.textContent = 'Oops! There was a problem submitting your form.';
+      popup.classList.add('show');
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 5000);
+    });
+  });
+});
