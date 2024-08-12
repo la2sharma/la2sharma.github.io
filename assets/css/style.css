@@ -312,6 +312,12 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
+@media (max-width: 1248px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
