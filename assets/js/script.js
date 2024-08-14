@@ -190,6 +190,16 @@ document.addEventListener('DOMContentLoaded', function() {
   typeGreeting();
 });
 
+//Download resume button
+document.getElementById('download-btn').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = 'assets/Lakshay.S.pdf'; // Replace with the actual file path
+  link.download = 'Lakshay.S.pdf'; // Replace with the desired file name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+
 // Form submit popup
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('[data-form]');
