@@ -705,3 +705,21 @@ footer{background:#1c303c;border-top:1px solid #d4e1e82b}
  .journey{padding-top:130px;padding-bottom:85px}.journey:before{height:65px}
  .contact{padding-top:100px}
 }
+
+
+/* Longer color bridges with a flat slope at each section boundary. */
+.work{padding-top:275px;padding-bottom:285px}
+.work:before{height:210px;background:linear-gradient(180deg,#1d3037 0.00%,#1e3138 8.33%,#23353c 16.67%,#2e4045 25.00%,#3f5054 33.33%,#546567 41.67%,#6d7d7c 50.00%,#869491 58.33%,#9ba9a4 66.67%,#acb9b3 75.00%,#b7c4bc 83.33%,#bcc8c0 91.67%,#bdc9c1 100.00%)}
+.work:after{height:220px;background:linear-gradient(180deg,#bdc9c1 0.00%,#bcc8c0 8.33%,#b7c3bc 16.67%,#acb9b2 25.00%,#9ba8a3 33.33%,#85928f 41.67%,#6c7a7a 50.00%,#536164 58.33%,#3d4b50 66.67%,#2c3a41 75.00%,#213037 83.33%,#1c2b33 91.67%,#1b2a32 100.00%)}
+.journey{padding-top:275px}
+.journey:before{height:210px;background:linear-gradient(180deg,#203d3a 0.00%,#213e3b 8.33%,#26423e 16.67%,#324b47 25.00%,#455a54 33.33%,#5d6d65 41.67%,#798279 50.00%,#94978c 58.33%,#acaa9d 66.67%,#bfb9aa 75.00%,#cbc2b3 83.33%,#d0c6b6 91.67%,#d1c7b7 100.00%)}
+.contact{padding-top:205px;padding-bottom:245px;isolation:isolate}
+.contact:before{height:145px;background:linear-gradient(180deg,#d1c7b7 0.00%,#d1c7b7 8.33%,#d0c7b8 16.67%,#cec7b9 25.00%,#cbc7ba 33.33%,#c7c6bd 41.67%,#c3c6bf 50.00%,#bec6c1 58.33%,#bac5c4 66.67%,#b7c5c5 75.00%,#b5c5c6 83.33%,#b4c5c7 91.67%,#b4c5c7 100.00%);z-index:-1}
+.contact:after{content:"";position:absolute;left:0;right:0;bottom:0;height:185px;background:linear-gradient(180deg,#9bb6c2 0.00%,#9ab5c1 8.33%,#96b1bd 16.67%,#8ea8b4 25.00%,#809aa6 33.33%,#6f8894 41.67%,#5c737f 50.00%,#485e6a 58.33%,#374c58 66.67%,#293e4a 75.00%,#213541 83.33%,#1d313d 91.67%,#1c303c 100.00%);pointer-events:none;z-index:-1}
+@media(max-width:760px){
+ .work{padding-top:190px;padding-bottom:205px}
+ .work:before{height:135px}.work:after{height:145px}
+ .journey{padding-top:190px}.journey:before{height:135px}
+ .contact{padding-top:150px;padding-bottom:190px}
+ .contact:before{height:100px}.contact:after{height:125px}
+}
