@@ -1,44 +1,21 @@
-# vCard - Personal portfolio
+# Lakshay Sharma — personal portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Static website for [lakshays.me](https://lakshays.me/), hosted with GitHub Pages.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Editing
 
-## Demo
+- `index.html`: content, sections, and metadata.
+- `assets/css/portfolio.css`: responsive layouts and styling.
+- `assets/js/portfolio.js`: the WebGL hero, navigation, skills explorer, and interactions.
+- `assets/images/portrait-mvp2.webp`: the portrait used on the page.
+- `assets/images/portfolio-mark.svg`: the L. favicon.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+No package installation or build is needed. Open `index.html` in a browser, or serve this directory with a static HTTP server. WebGL has a CSS fallback; the site supports reduced motion and a motion pause control.
 
-## Prerequisites
+## Deployment
 
-Before you begin, ensure you have met the following requirements:
+The repository is ready to serve from its root using GitHub Pages. `CNAME` retains the custom domain `lakshays.me`. Publishing depends on the repository's GitHub Pages settings and pushing the changes to its configured source branch.
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## Retained files
 
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-## License
-
-MIT
+Earlier assets, the `old/` directory, and the existing license are retained. The previous site used the MIT-licensed vCard template by [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).

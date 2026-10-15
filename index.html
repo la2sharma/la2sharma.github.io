@@ -1,1278 +1,481 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakshay Sharma</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/avatar-1.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0f13">
+<meta name="description" content="Lakshay Sharma. Code, data, AI, and a life built around curiosity. Explore an interactive personal universe.">
+<title>Lakshay Sharma — A curious mind. An open horizon.</title>
+<link rel="stylesheet" href="assets/css/portfolio.css">
+<link rel="icon" href="assets/images/portfolio-mark.svg" type="image/svg+xml">
+<link rel="canonical" href="https://lakshays.me/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lakshay Sharma — A curious mind. An open horizon.">
+<meta property="og:description" content="From Amritsar to Toronto. Software, data, AI, and a life built around curiosity.">
+<meta property="og:url" content="https://lakshays.me/">
+<meta property="og:image" content="https://lakshays.me/assets/images/portrait-mvp2.webp">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-        <img class="hide-on-mobile" src="./assets/images/dp3.jpg" alt="Lakshay Sharma" width="80" style="border-radius: 20px; width: 100%;">
-    
-        <div class="info-content">
-          <h1 class="name" title="Lakshay Sharma">Lakshay Sharma</h1>
-
-          <p class="title">Computer Science Grad @ YorkU</p>
-          <p class="title" style="margin-top: 10px;">Ex-Intern @ Hydro One</p>
-          <p class="title" style="margin-top: 10px;">Ex-Intern @ Effizient Immigration</p>
-
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:la2sharma@gmail.com" class="contact-link">la2sharma@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (647) 512-3908</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">October 2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Toronto, ON</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item" style="margin-left: 45px;">
-
-            <ul class="social-list">
-      
-              <li class="social-item">
-                <a href="https://linkedin.com/in/la2sharma" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-      
-              <li class="social-item">
-                <a href="https://github.com/la2sharma" class="social-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-              </li>
-      
-              <li class="social-item">
-                <a href="https://instagram.com/la2sharma" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-      
-            </ul>
-            
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            <h1><span class="greeting fade-in"></span></h1>
-            I'm Lakshay Sharma, 
-            a detail-oriented and innovative Computer Science graduate based in Toronto, ON. 
-            With a strong background in <b>Software development, Automation, and, Data analysis</b>. I am 
-            passionate about optimizing processes, driving engagement, and delivering solutions 
-            across diverse projects and teams. I am a quick learner who loves to acquire new skills, 
-            and I have a keen interest in <b>Technical sales</b>.
-          </p>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Skills and Interests</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Programming Languages</h4>
-
-                <p class="service-item-text">
-                  Proficient in Java, Python, C, SQL, HTML/CSS, JavaScript, PHP and Fortran
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                 Skilled in High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-Sales.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Technical Sales</h4>
-
-                <p class="service-item-text">
-                  Interested in exploring the world of technical sales and marketing.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-skills.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Soft Skills</h4>
-
-                <p class="service-item-text">
-                  Strong communication, problem-solving, and analytical skills. 
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-book.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Quick Learner</h4>
-
-                <p class="service-item-text">
-                  A quick learner who is always eager to absorb new knowledge and develop new skills.
-                </p>
-              </div>
-
-            </li>
-            
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <!-- <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2> 
-          <button id="download-btn" class="form-btn" target="_blank">
-            <ion-icon name="download"></ion-icon>
-            <span>Download</span>
-          </button>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor of Science (BSc.) in Computer Science</h4>
-
-              <span>York University, Toronto, ON | Jan 2020 - Jan 2024</span>
-
-              <p class="timeline-text">
-                Recipient of York University International Scholarship of Merit for three consecutive terms.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Analyst</h4>
-              <span>Export Development Canada, Toronto, ON | Sept 2024 – Present</span>
-              <ul class="timeline-text">
-                <li>Developed a self-serve Company Match tool using Python, HTML/CSS, and React, streamlining workflows and saving over 10 hours/sprint.</li>
-                <li>Automated lead extraction from multiple intake forms using VBA, improving efficiency and reducing manual errors.</li>
-                <li>Mastered CASL guidelines and contributed to maintaining full CASL compliance and reducing potential legal risks.</li>
-                <li>Implemented end-to-end prospect profiling automation using Power Automate, Power BI, and Microsoft Copilot, significantly accelerating the sales pipeline.</li>
-                <li>Supported ETL processes to cleanse and prepare large datasets for analysis, ensuring high data quality and consistency.</li>
-                <li>Contributed to interactive data visualization projects that translated complex datasets into clear, actionable insights using Power BI for key stakeholders.</li>
-              </ul>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Telecom Operations Co-op</h4>
-              <span>Hydro One, Toronto, ON | Jan 2022 – April 2023</span>
-              <ul class="timeline-text">
-                <li>Successfully executed the migration of automated audit reports from Granite to Adaptive Inventory using VBA and REST API.</li>
-                <li>Developed automation tools using Python and VBA, reducing manual effort by 50% and saving 15 hours per week for the team.</li>
-                <li>Created comprehensive training documentation for audit reports and automation tools to ensure easy adaptation.</li>
-                <li>Managed and analyzed over 1000 locate requests from Ontario One Call, ensuring timely response and accurate data handling.</li>
-                <li>Collaborated with cross-functional teams to provide comprehensive system support, including utilizing ArcGIS/Google Earth for mapping data, SQL/EAI for advanced OSS and SAP for enterprise resource planning.</li>
-              </ul>
-            </li>
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer Co-op</h4>
-
-              <span>Effizient Immigration, Kitchener, ON | May 2020 – Oct 2020</span>
-
-
-              <ul class="timeline-text">
-                <li>Redesigned and developed the company’s website, increasing user engagement by 25% and reducing bounce rate by 20%.</li>
-                <li>Implemented SEO strategies, improving organic search ranking by 40% and increasing website traffic by 50% within 6 months.</li>
-                <li>Managed Google Ads campaigns, achieving a 15% higher click-through rate (CTR) and a 20% lower cost per acquisition (CPA) compared to industry benchmarks.</li>
-              </ul>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Leadership</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Mentor at Computational Thinking Club</h4>
-
-              <span>Lassonde School of Engineering, Toronto, ON | Jan 2021 – April 2021</span>
-              <ul class="timeline-text">
-                <li>Planned and facilitated interactive sessions on computational thinking and problem-solving skills for 10-15 students weekly.</li>
-                <li>Mentored students in coding projects, leading to a significant increase in coding proficiency among club members.</li>
-              </ul>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Monitor for Introduction to Computing Course</h4>
-
-             <span>York University, Toronto, ON | May 2020 – Dec 2020</span> 
-
-              <p class=" h4 timeline-item-title">
-                
-              </p>
-
-              <ul class="timeline-text">
-                <li>Organized and facilitated virtual study groups and review sessions to promote active learning and collaboration.</li>
-                <li>Fostered a supportive environment for students facing challenges transitioning to online studies during the COVID-19 pandemic.</li>
-              </ul>
-
-            </li>
-
-          </ol>
-
-          <section class="skill">
-
-            <h3 class="h3 skills-title">Skills</h3>
-  
-            <ul class="skills-list content-card">
-  
-              <li class="skills-item">
-  
-                <div class="title-wrapper">
-                  <h5 class="h5">Programming Languages</h5>
-                  <data value="80">80%</data>
-                </div>
-  
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-  
-                <p class="timeline-text">
-                  Java, Python, C, SQL, HTML/CSS, JavaScript, PHP, Fortran
-                </p>
-  
-              </li>
-  
-              <li class="skills-item">
-  
-                <div class="title-wrapper">
-                  <h5 class="h5">Technical Tools</h5>
-                  <data value="70">70%</data>
-                </div>
-  
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-  
-                <p class="timeline-text">
-                  Git, VBA, VS Code, Eclipse, RESTful APIs, SAP, ArcGIS, MS Office, ChatGPT, Llama3
-                </p>
-  
-              </li>
-  
-              <li class="skills-item">
-  
-                <div class="title-wrapper">
-                  <h5 class="h5">Generative AI</h5>
-                  <data value="90">90%</data>
-                </div>
-  
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-  
-                <p class="timeline-text">
-                  Experience in using Generative AI for coding, debugging, and task automation, familiar with prompt engineering.
-                </p>
-  
-              </li>
-  
-            </ul>
-  
-          </section>
-
-        </section>
-<!-- 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Projects</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Consumer Loan Default Behavior Analysis</h4>
-
-              <p class="timeline-text">
-                Lassonde School of Engineering, Toronto, ON
-              </p>
-
-              <ul>
-                <li>Analyzed over 500,000 loan repayment accounts, pinpointing 14 key demographic trends and 4 critical risk factors through Python and statistical modeling.</li>
-                <li>Developed 2 interactive visualizations and dashboards that could help increase decision-making accuracy.</li>
-              </ul>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Among-Us Mobile Game Development</h4>
-
-              <p class="timeline-text">
-                York University, Toronto, ON
-              </p>
-
-              <ul>
-                <li>Developed an ’Among Us’-inspired mobile game using Java, integrating multiplayer functionality and real-time chat features.</li>
-                <li>Implemented game mechanics, including player roles, tasks, and voting systems, resulting in a highly engaging user experience.</li>
-              </ul>
-
-            </li>
-
-          </ol>
-
-        </section> -->
-
-
-      </article>
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <!-- <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul> -->
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <!-- <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li> -->
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://effizient.ca" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/effizient.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Effizient Immigration</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://webloped.ca" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/webloped.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Webloped</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://break-the-chain.github.io/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/btc.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Break The Chain</h3>
-
-                <p class="project-category">Mobile App / Website</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://akaprotectionservices.github.io/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/aka.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">AKA Protection Services</h3>
-
-                <p class="project-category">Web Development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/la2sharma/ConsumerLoanEDA" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/eda.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Consumer loan EDA</h3>
-
-                <p class="project-category">Data Analysis</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/wip.png" alt="metaspark" loading="lazy">
-                </figure>
-
-              </a>
-            </li>
-<!-- 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <!-- <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article> -->
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.85031052114!2d-79.6898663778699!3d43.7180655944969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1723437567376!5m2!1sen!2sca"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="https://formspree.io/f/manwjlbj" method="POST" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true">
+</div>
+<header>
+<div class="wrap nav">
+<a class="brand" href="#top" aria-label="Lakshay, back to top">
+<span class="logo-mark">L<span class="logo-dot">.</span>
+</span>
+<span class="logo-wordmark">LAKSHAY <span>SHARMA</span>
+</span>
+</a>
+<nav class="nav-mid" aria-label="Main navigation">
+<a href="#work">Selected work</a>
+<a href="#person">The person</a>
+<a href="#skills">The toolkit</a>
+<a href="#journey">The journey</a>
+</nav>
+<div class="nav-end">
+<button class="nav-button" id="jump-open" aria-haspopup="dialog">Explore <span aria-hidden="true">↗</span>
+</button>
+<a class="nav-contact" href="#contact">Let’s connect ↗</a>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+<div class="scene-wrap" aria-hidden="true">
+<div class="scene-fallback">
+</div>
+<canvas id="universe">
+</canvas>
+<div class="scene-caption">
+<span>Always becoming.</span>
+</div>
+</div>
+<div class="wrap hero-layout">
+<div class="hero-topline micro">
+<span class="live-dot">
+</span> HEY, I’M LAKSHAY</div>
+<h1 id="hero-title">A curious mind.<br>
+<em class="serif">An open horizon.</em>
+</h1>
+<p class="hero-description">Born in Amritsar. Building a life in Toronto.<br>I’m drawn to good people, thoughtful ideas, and the possibility of making something that matters.</p>
+<div class="hero-cta">
+<a class="pill" href="#work">Explore my work <span>↗</span>
+</a>
+<a class="quiet" href="#person">My story ↗</a>
+</div>
+<div class="hero-floor">
+<div class="hero-index">
+<a class="scroll-disc" href="#work" aria-label="Scroll to selected work">↓</a>
+<span class="micro">A LITTLE CURIOSITY.<br>A LOT OF POSSIBILITY.</span>
+</div>
+<span class="micro middle">ROOTED IN AMRITSAR. AT HOME IN TORONTO.</span>
+<span aria-hidden="true">
+</span>
+</div>
+</div>
+</section>
+<div class="ticker" aria-label="Code, curiosity, fitness, AI, and ambition">
+<span>CODE & CURIOSITY</span>
+<b>✳</b>
+<span>BUILT TO EVOLVE</span>
+<b>✳</b>
+<span>FITNESS & FOCUS</span>
+<b>✳</b>
+<span>AI & POSSIBILITY</span>
+<b>✳</b>
+<span>JUST GETTING STARTED</span>
+</div>
+<section class="section work" id="work" aria-labelledby="work-title">
+<div class="wrap">
+<div class="section-top reveal">
+<span class="micro">01 / IDEAS MADE REAL</span>
+<span class="micro muted">A FEW THINGS I’VE BROUGHT TO LIFE</span>
+</div>
+<div class="section-heading reveal">
+<h2 id="work-title">Less talk.<br>
+<em class="serif">More making.</em>
+</h2>
+<p>Useful is the starting point. Here’s the work behind the words — across product engineering, business websites, and team-built ideas.</p>
+</div>
+<div class="work-grid">
+<article class="project tilt reveal">
+<div class="project-visual">
+<span class="project-number">01 / EXPORT DEVELOPMENT CANADA</span>
+<div class="dashboard3d">
+<div class="dash-head">
+<strong>cm.</strong>
+<span>Company Match</span>
+</div>
+<div class="dash-welcome">Less waiting.<br>More doing.</div>
+<div class="dash-stats">
+<div>WORKFLOW<strong>Self-serve</strong>
+</div>
+<div>TIME SAVED<strong>10+ hrs</strong>
+</div>
+</div>
+<div class="dash-bars" aria-hidden="true">
+<i style="--h:24%">
+</i>
+<i style="--h:40%">
+</i>
+<i style="--h:32%">
+</i>
+<i style="--h:63%">
+</i>
+<i style="--h:48%">
+</i>
+<i style="--h:78%">
+</i>
+<i style="--h:66%">
+</i>
+<i style="--h:100%">
+</i>
+</div>
+<div class="dash-foot">
+<span>PYTHON / REACT / AUTOMATION</span>
+<span>↗</span>
+</div>
+</div>
+<span class="visual-tag">ILLUSTRATIVE INTERFACE / TIME SAVED PER SPRINT</span>
+</div>
+<div class="project-meta">
+<div>
+<span class="micro muted">PRODUCT ENGINEERING</span>
+<h3>Company Match</h3>
+<p>An internal self-serve tool that turns a time-consuming request process into instant access.</p>
+</div>
+<span class="project-arrow" aria-hidden="true">✳</span>
+</div>
+<details class="case-detail">
+<summary>Inside the project <span aria-hidden="true">↗</span>
+</summary>
+<dl>
+<div>
+<dt>The friction</dt>
+<dd>A time-consuming request process stood between people and the information they needed.</dd>
+</div>
+<div>
+<dt>The solution</dt>
+<dd>An internal self-serve tool built with Python, React, and automation.</dd>
+</div>
+<div>
+<dt>The outcome</dt>
+<dd>10+ hours saved per sprint, with faster access and less waiting.</dd>
+</div>
+</dl>
+</details>
+</article>
+<a class="project tilt reveal" href="https://webloped.ca/" target="_blank" rel="noopener noreferrer" aria-label="Visit Webloped in a new tab">
+<div class="project-visual web-visual">
+<span class="project-number">02 / WEB DEVELOPMENT</span>
+<span class="web-word">Webloped<span>.</span>
+</span>
+<span class="visual-tag">DIGITAL, WITH INTENTION.</span>
+</div>
+<div class="project-meta">
+<div>
+<span class="micro muted">DESIGN / DEVELOPMENT / AUTOMATION</span>
+<h3>Webloped</h3>
+<p>Distinctive digital experiences for businesses.</p>
+</div>
+<span class="project-arrow">↗</span>
+</div>
+</a>
+<a class="project tilt reveal" href="https://break-the-chain.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit Break the Chain in a new tab">
+<div class="project-visual chain-visual">
+<span class="project-number">03 / A TEAM-BUILT CONCEPT</span>
+<div class="phone" aria-hidden="true">✳<h4>Break the<br>
+<em class="serif">chain.</em>
+</h4>
+<p>Better information.<br>Better together.</p>
+<div>EXPLORE THE IDEA ↗</div>
+</div>
+<span class="visual-tag">ANALYTICS FOR PUBLIC HEALTH</span>
+</div>
+<div class="project-meta">
+<div>
+<span class="micro muted">PRODUCT CONCEPT</span>
+<h3>Break The Chain</h3>
+<p>Using analytics to support public health.</p>
+</div>
+<span class="project-arrow">↗</span>
+</div>
+</a>
+</div>
+<div class="work-footer reveal">
+<span>Python, React, SQL, and Power BI — connected by a habit of making things easier.</span>
+<a href="#contact">Let’s build something ↗</a>
+</div>
+</div>
+</section>
+<section class="section person" id="person" aria-labelledby="person-title">
+<div class="wrap">
+<div class="section-top reveal">
+<span class="micro">02 / HUMAN, FIRST</span>
+<span class="micro muted">THERE’S A LIFE BEHIND THE LAPTOP</span>
+</div>
+<div class="person-grid">
+<div class="portrait-stage reveal">
+<div class="portrait">
+<img src="assets/images/portrait-mvp2.webp" width="864" height="1536" loading="lazy" alt="Lakshay seated in a warm architectural interior">
+<div class="portrait-label">BIG PLANS. STILL ME. ↗</div>
+</div>
+</div>
+<div class="person-copy reveal">
+<span class="micro muted">A LITTLE CONTEXT</span>
+<h2 id="person-title">Roots that run deep.<br>
+<em class="serif">Dreams that won&#8217;t sleep.</em>
+</h2>
+<p>I was born and raised in Amritsar, Punjab. At 19, I moved to Toronto, and I’ve been building my life here ever since. A new city, a computer science degree, and a growing body of work — with a lot still ahead.</p>
+<p>Today, my work connects software, data, and automation. I like turning messy processes into useful tools, and I’m going deep on AI to understand what I can build next. I want ambitious problems, real ownership, and people who challenge me to grow.</p>
+<p class="belief">Give good people room. Fix the friction. Keep it honest. Then raise the bar.</p>
+<div class="signature">Lakshay.</div>
+</div>
+</div>
+<div class="origin-panel reveal" aria-labelledby="origin-title">
+<div class="origin-intro">
+<span class="micro muted">ROOTS & ROUTES</span>
+<h3 id="origin-title">Punjab is where<br>my story began.<br>
+<em class="serif">Toronto is where<br>I’m building it.</em>
+</h3>
+</div>
+<div class="origin-route">
+<div class="route-cities">
+<div>
+<span class="micro muted">BORN & RAISED</span>
+<strong>Amritsar<span>Punjab, India</span>
+</strong>
+</div>
+<div class="route-destination">
+<span class="micro muted">A NEW CHAPTER AT 19</span>
+<strong>Toronto<span>Ontario, Canada</span>
+</strong>
+</div>
+</div>
+<svg class="route-art" viewBox="0 0 600 120" role="img" aria-label="A journey from Amritsar to Toronto">
+<defs>
+<linearGradient id="route-gradient">
+<stop stop-color="#bfddc8"/>
+<stop offset="1" stop-color="#bad2e9"/>
+</linearGradient>
+</defs>
+<path d="M20 95 Q300 -65 580 95" fill="none" stroke="#bad2e925" stroke-width="1"/>
+<path class="route-path" d="M20 95 Q300 -65 580 95" fill="none" stroke="url(#route-gradient)" stroke-width="1.5"/>
+<circle cx="20" cy="95" r="5" fill="#bfddc8"/>
+<circle cx="580" cy="95" r="5" fill="#bad2e9"/>
+<path d="M292 18 l14 10 -14 10 3 -10Z" fill="#c8dadf"/>
+</svg>
+<p>Two places, one evolving story. My roots are in Amritsar. My everyday life, work, and next possibilities are here in Toronto.</p>
+</div>
+</div>
+<div class="interest-grid">
+<article class="interest reveal">
+<span class="micro muted">01 / FITNESS</span>
+<div class="glyph" aria-hidden="true">↗</div>
+<h3>Show up.<br>Get stronger.</h3>
+<p>Fitness keeps me grounded. Consistency, discipline, and getting a little better, even when nobody’s watching.</p>
+</article>
+<article class="interest reveal">
+<span class="micro muted">02 / AI & TECHNOLOGY</span>
+<div class="glyph" aria-hidden="true">⌘</div>
+<h3>Past the hype.<br>Into the useful.</h3>
+<p>I want to understand what AI can actually do, then use it to its fullest. More experimenting. More making.</p>
+</article>
+<article class="interest reveal">
+<span class="micro muted">03 / MUSIC</span>
+<div class="glyph" aria-hidden="true">♮</div>
+<h3>One day,<br>I’ll play it.</h3>
+<p>I’d love to master an instrument. For now, I have enthusiasm. The talent is on the roadmap.</p>
+</article>
+<article class="interest reveal">
+<span class="micro muted">04 / PEOPLE</span>
+<div class="glyph" aria-hidden="true">✳</div>
+<h3>Good energy.<br>Big ideas.</h3>
+<p>Curious people, honest conversations, and room for a laugh. The right people make the possibilities bigger.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section skills" id="skills" aria-labelledby="skills-title">
+<div class="wrap">
+<div class="section-top reveal">
+<span class="micro">03 / THE CONNECTED TOOLKIT</span>
+<span class="micro muted">SELECT A NODE. CONNECT THE DOTS.</span>
+</div>
+<div class="section-heading reveal">
+<h2 id="skills-title">Different worlds.<br>
+<em class="serif">One mindset.</em>
+</h2>
+<p>The interesting work happens where disciplines meet. Explore the tools I use and the possibilities I’m pursuing.</p>
+</div>
+<div class="skills-grid">
+<div class="constellation reveal" role="group" aria-label="Explore skill areas">
+<svg class="constellation-lines" viewBox="0 0 500 440" preserveAspectRatio="none" aria-hidden="true">
+<line x1="120" y1="123" x2="375" y2="123"/>
+<line x1="120" y1="123" x2="250" y2="273"/>
+<line x1="375" y1="123" x2="250" y2="273"/>
+<line x1="250" y1="273" x2="90" y2="374"/>
+<line x1="120" y1="123" x2="90" y2="374"/>
+<line x1="375" y1="123" x2="90" y2="374"/>
+</svg>
+<button class="skill-node node-code" data-skill="code" aria-pressed="true" aria-controls="skill-detail">
+<span aria-hidden="true">&lt;/&gt;</span>Build</button>
+<button class="skill-node node-data" data-skill="data" aria-pressed="false" aria-controls="skill-detail">
+<span aria-hidden="true">▥</span>Understand</button>
+<button class="skill-node node-ai" data-skill="ai" aria-pressed="false" aria-controls="skill-detail">
+<span aria-hidden="true">✳</span>Explore AI</button>
+<button class="skill-node node-product" data-skill="product" aria-pressed="false" aria-controls="skill-detail">
+<span aria-hidden="true">↗</span>Connect</button>
+</div>
+<div class="skill-detail" id="skill-detail" aria-live="polite" aria-atomic="true">
+<span class="micro muted" id="skill-label">SOFTWARE & DIGITAL EXPERIENCES</span>
+<h3 id="skill-title">From “what if”<br>to “it works.”</h3>
+<p id="skill-copy">Interfaces people enjoy, websites that feel considered, and tools that remove friction from everyday work.</p>
+<ul class="chips" id="skill-chips">
+<li>Python</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Web development</li>
+<li>Responsive design</li>
+<li>UX thinking</li>
+</ul>
+<span class="skill-note" id="skill-note">IN PRACTICE / COMPANY MATCH & WEBLOPED</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section journey" id="journey" aria-labelledby="journey-title">
+<div class="wrap">
+<div class="section-top reveal">
+<span class="micro">04 / THE JOURNEY SO FAR</span>
+<span class="micro muted">A FOUNDATION. NOT A FINISH LINE.</span>
+</div>
+<div class="section-heading reveal">
+<h2 id="journey-title">Every chapter<br>
+<em class="serif">adds something.</em>
+</h2>
+<p>From web development to telecom operations to data and automation. More ways to see a problem. More ways to solve it.</p>
+</div>
+<div class="timeline-row reveal">
+<time>SEP 2024 — PRESENT</time>
+<div>
+<h3>Data Analyst</h3>
+<span class="company">Export Development Canada / Toronto</span>
+</div>
+<p>Self-serve tools, automation, and data-driven workflows that help teams work more efficiently.</p>
+</div>
+<div class="timeline-row reveal">
+<time>JAN 2022 — APR 2023</time>
+<div>
+<h3>Telecom Operations Co-op</h3>
+<span class="company">Hydro One / Toronto</span>
+</div>
+<p>Reporting automations and operational improvements across large-scale telecom systems.</p>
+</div>
+<div class="timeline-row reveal">
+<time>MAY — OCT 2020</time>
+<div>
+<h3>Web Developer Co-op</h3>
+<span class="company">Effizient Immigration / Kitchener</span>
+</div>
+<p>Web experiences, digital marketing, and search visibility.</p>
+</div>
+<div class="timeline-row reveal">
+<time>JAN 2020 — JAN 2024</time>
+<div>
+<h3>BSc, Computer Science</h3>
+<span class="company">York University / Toronto</span>
+</div>
+<p>International Scholarship of Merit recipient across three consecutive terms.</p>
+</div>
+<div class="journey-foot">
+<a href="mailto:la2sharma@gmail.com?subject=Resume%20request">Request my résumé ↗</a>
+</div>
+</div>
+</section>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+<div class="contact-ring" aria-hidden="true">
+</div>
+<div class="wrap">
+<div class="section-top">
+<span class="micro">05 / OPEN TO POSSIBILITY</span>
+<span class="micro">THE NEXT CHAPTER IS UNWRITTEN.</span>
+</div>
+<div class="contact-main reveal">
+<h2 id="contact-title">Same<br>
+<em class="serif">wavelength?</em>
+</h2>
+<p>I’m looking for opportunities with real ownership, ambitious problems, and room to grow. If you’re hiring, building something, or exploring what AI makes possible, I’d love to compare notes.</p>
+<a class="pill" href="mailto:la2sharma@gmail.com?subject=Let%27s%20connect%20Lakshay">Let’s start a conversation <span>↗</span>
+</a>
+</div>
+<div class="connect-paths" aria-label="Ways to connect">
+<a href="mailto:la2sharma@gmail.com?subject=An%20opportunity%20for%20Lakshay">
+<span class="micro">01 / AN OPPORTUNITY</span>
+<strong>Room to grow.<span aria-hidden="true">↗</span>
+</strong>
+<p>Software, data, automation, and problems worth owning.</p>
+</a>
+<a href="mailto:la2sharma@gmail.com?subject=Let%27s%20build%20something">
+<span class="micro">02 / A COLLABORATION</span>
+<strong>Something to build.<span aria-hidden="true">↗</span>
+</strong>
+<p>A useful product, a better workflow, or an idea with potential.</p>
+</a>
+<a href="mailto:la2sharma@gmail.com?subject=Coffee%20and%20ideas">
+<span class="micro">03 / A CONVERSATION</span>
+<strong>Same wavelength.<span aria-hidden="true">↗</span>
+</strong>
+<p>AI, technology, big plans — or a good coffee in Toronto.</p>
+</a>
+</div>
+<div class="contact-bottom">
+<span class="micro">GOOD PEOPLE. INTERESTING PROBLEMS. BIG POSSIBILITIES.</span>
+<div class="email-tools">
+<a href="mailto:la2sharma@gmail.com">la2sharma@gmail.com ↗</a>
+<button class="copy" id="copy-email">Copy email</button>
+<span id="copy-status" role="status">
+</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap footer-inner">
+<a class="brand footer-brand" href="#top" aria-label="Lakshay Sharma, back to top">
+<span class="logo-mark">L<span class="logo-dot">.</span>
+</span>
+</a>
+<span class="micro">BUILT WITH CURIOSITY. STILL RAISING THE BAR.<br>© 2026 LAKSHAY SHARMA</span>
+<div class="footer-links">
+<a href="https://www.linkedin.com/in/la2sharma/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+<a href="#top">BACK TO TOP ↑</a>
+</div>
+</div>
+</footer>
+<button class="motion-button" id="motion-toggle" aria-pressed="false">Pause motion Ⅱ</button>
+<dialog class="jump-dialog" id="jump-dialog" aria-labelledby="jump-title">
+<div class="dialog-head">
+<h2 class="micro" id="jump-title">PICK A DIRECTION</h2>
+<button id="jump-close" aria-label="Close navigation">×</button>
+</div>
+<nav class="jump-links" aria-label="Explore this site">
+<a href="#work">Selected work <span>01 ↗</span>
+</a>
+<a href="#person">The person <span>02 ↗</span>
+</a>
+<a href="#skills">The toolkit <span>03 ↗</span>
+</a>
+<a href="#journey">The journey <span>04 ↗</span>
+</a>
+<a href="#contact">Say hello <span>05 ↗</span>
+</a>
+</nav>
+<p class="dialog-foot">Press K to explore. Escape to close.</p>
+</dialog>
+<script src="assets/js/portfolio.js" defer>
+</script>
 </body>
-
 </html>
