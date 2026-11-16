@@ -130,6 +130,28 @@
     max-width:680px;margin:26px 0 0;color:var(--cream-dim);font-size:.95rem;
     border-left:3px solid var(--gold);padding-left:16px;
   }
+  .list-toggle{
+    display:inline-block;margin-top:28px;
+    font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    color:var(--navy);background:var(--gold);border:none;border-radius:999px;
+    padding:14px 26px;cursor:pointer;
+  }
+  .list-toggle:hover{background:var(--gold-soft)}
+  .full-list{margin-top:26px;display:none}
+  .full-list.open{display:block}
+  .full-list ol{list-style:none;counter-reset:bite}
+  .full-list li{
+    counter-increment:bite;
+    display:flex;gap:18px;align-items:baseline;
+    padding:16px 4px;border-bottom:1px solid rgba(232,182,76,.16);
+  }
+  .full-list li::before{
+    content:counter(bite, decimal-leading-zero);
+    font-family:Georgia,serif;color:var(--gold);font-size:1.05rem;flex-shrink:0;
+  }
+  .full-list h3{font-family:Georgia,serif;font-size:1.15rem}
+  .full-list p{color:var(--cream-dim);font-size:.95rem}
+  .full-list .where{color:var(--gold);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
   footer{
     text-align:center;padding:70px 0 46px;color:var(--cream-dim);font-size:.92rem;
   }
@@ -201,52 +223,67 @@
   </section>
 
   <section>
-    <h2>The first <em>bites</em></h2>
-    <p style="color:var(--cream-dim);max-width:680px">The list is short on purpose. These are
-    the ones I think about when Toronto gets quiet.</p>
+    <h2>The most <em>awaited bites</em></h2>
+    <p style="color:var(--cream-dim);max-width:680px">Fourteen things I have been thinking
+    about since Toronto. Here are the first few, and the full list is one tap away.</p>
     <div class="foods">
       <article class="food">
         <div class="rank">01 / THE FIRST BITE</div>
-        <h3>Amritsari Kulcha</h3>
+        <h3>Kulcha</h3>
         <p>Stuffed, crisped in the tandoor, drowned in white butter, with chole on the side.
         This is the whole reason for the trip. Everything else is a bonus.</p>
         <span class="tag">Morning one</span>
       </article>
       <article class="food">
         <div class="rank">02 / THE CLASSIC</div>
-        <h3>Lassi</h3>
-        <p>Thick, cold, sweet, with a spoonful of malai on top. The glass is basically a meal,
-        and I would not have it any other way.</p>
-        <span class="tag">With the kulcha</span>
+        <h3>Khana Poori</h3>
+        <p>Hot, puffed pooris straight off the flame. Simple, golden, and gone in minutes.</p>
+        <span class="tag">Breakfast</span>
       </article>
       <article class="food">
-        <div class="rank">03 / THE GOLDEN HOUR</div>
-        <h3>Jalebi with Rabri</h3>
-        <p>Hot jalebis straight off the kadhai, folded into cool rabri. Best eaten standing
-        outside the shop, sugar on your fingers, no regrets.</p>
-        <span class="tag">Evening walk</span>
+        <div class="rank">03 / THE HEAVYWEIGHT</div>
+        <h3>Bhature</h3>
+        <p>Big, fluffy bhature with chole. Breakfast the way Amritsar does it, no shortcuts.</p>
+        <span class="tag">Breakfast</span>
       </article>
       <article class="food">
-        <div class="rank">04 / THE HUMBLE ONE</div>
-        <h3>Langar at the Golden Temple</h3>
-        <p>Dal, roti, and kheer served to thousands, sitting shoulder to shoulder on the floor.
-        The simplest meal in the city, and somehow the best.</p>
-        <span class="tag">Sri Harmandir Sahib</span>
+        <div class="rank">04 / THE BOLD ONE</div>
+        <h3>Bheja Kulcha</h3>
+        <p>Kulcha stuffed with spiced bheja. Rich, bold, and unapologetically Amritsari.</p>
+        <span class="tag">Morning one</span>
       </article>
       <article class="food">
-        <div class="rank">05 / THE CRUNCH</div>
-        <h3>Amritsari Fish</h3>
-        <p>Fish fried in a spiced besan batter, crisp outside and soft inside, with onions and
-        green chutney. Lawrence Road knows what it is doing.</p>
-        <span class="tag">Lunch run</span>
+        <div class="rank">05 / THE SNACK</div>
+        <h3>Spring Roll</h3>
+        <p>Crisp, golden rolls with a spicy filling. The snack in between the meals.</p>
+        <span class="tag">Afternoon</span>
       </article>
       <article class="food">
-        <div class="rank">06 / THE LATE NIGHT</div>
-        <h3>Chicken, Amritsari Style</h3>
-        <p>Tandoori chicken the way only Amritsar makes it, smoky and unapologetic. The city
-        does not sleep early, and neither will I.</p>
-        <span class="tag">After dark</span>
+        <div class="rank">06 / THE CLASSIC</div>
+        <h3>Samosa</h3>
+        <p>Crisp pastry, spiced filling, green chutney. The classic that never misses.</p>
+        <span class="tag">Anytime</span>
       </article>
+    </div>
+
+    <button class="list-toggle" id="list-toggle" aria-expanded="false" aria-controls="full-list">View full list, all 14 bites</button>
+    <div class="full-list" id="full-list">
+      <ol>
+        <li><div><h3>Kulcha</h3><p>Stuffed, crisped in the tandoor, drowned in white butter, with chole on the side. The whole reason for the trip.</p></div></li>
+        <li><div><h3>Khana Poori</h3><p>Hot, puffed pooris straight off the flame. Simple, golden, and gone in minutes.</p></div></li>
+        <li><div><h3>Bhature</h3><p>Big, fluffy bhature with chole. Breakfast the way Amritsar does it, no shortcuts.</p></div></li>
+        <li><div><h3>Bheja Kulcha</h3><p>Kulcha stuffed with spiced bheja. Rich, bold, and unapologetically Amritsari.</p></div></li>
+        <li><div><h3>Spring Roll</h3><p>Crisp, golden rolls with a spicy filling. The snack in between the meals.</p></div></li>
+        <li><div><h3>Samosa</h3><p>Crisp pastry, spiced filling, green chutney. The classic that never misses.</p></div></li>
+        <li><div><h3>Satpura</h3><p>Layers of sweet, flaky goodness. The old-school Punjabi sweet.</p></div></li>
+        <li><div><h3>Lawrence Road Jalebi and Gulab Jamun</h3><p>Hot jalebis and soft gulab jamuns from Lawrence Road. Sugar on your fingers, no regrets. <span class="where">Lawrence Road</span></p></div></li>
+        <li><div><h3>Chicken Tikka (Bira Chicken)</h3><p>Smoky chicken tikka, Amritsar style. Charred at the edges, juicy inside. <span class="where">Bira Chicken</span></p></div></li>
+        <li><div><h3>Bijwasi Chaat, Band Tikki</h3><p>Tangy, spicy chaat with a crisp tikki. The street-food stop. <span class="where">Bijwasi</span></p></div></li>
+        <li><div><h3>Lemonade</h3><p>Ice-cold lemonade. The reset button between all the eating. <span class="where">Loghar</span></p></div></li>
+        <li><div><h3>Lala Khate Wala Kulcha</h3><p>Another kulcha worth the trip. Because one kulcha is never enough. <span class="where">Loghar</span></p></div></li>
+        <li><div><h3>Jamadar Hawali Kulcha</h3><p>Kulcha from Jamadar Hawali. Yes, there is more than one kulcha on this list. There should be.</p></div></li>
+        <li><div><h3>Mix Juice</h3><p>A tall glass of mixed juice. Fresh, cold, and the perfect finish. <span class="where">Subash Juice Bar</span></p></div></li>
+      </ol>
     </div>
   </section>
 
@@ -302,6 +339,18 @@
   }
   tick();
   setInterval(tick, 1000);
+})();
+
+(function(){
+  var btn = document.getElementById("list-toggle");
+  var list = document.getElementById("full-list");
+  if (!btn || !list) return;
+  btn.addEventListener("click", function(){
+    var open = list.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "Show less" : "View full list, all 14 bites";
+    if (open) list.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
 })();
 </script>
 </body>
