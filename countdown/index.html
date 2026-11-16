@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172630">
+<meta name="description" content="Lakshay is counting down to landing in Amritsar at 2:30 AM on February 7, 2027. First stop: kulcha.">
+<title>The Kulcha Countdown — Lakshay is coming home to Amritsar</title>
+<link rel="canonical" href="https://lakshays.me/countdown/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Kulcha Countdown — Amritsar, I'm coming home">
+<meta property="og:description" content="Counting down to 2:30 AM, February 7, 2027. Landing in Amritsar, first stop kulcha.">
+<meta property="og:url" content="https://lakshays.me/countdown/">
+<style>
+  :root{
+    --navy:#172630;
+    --navy-2:#0f1c24;
+    --gold:#e8b64c;
+    --gold-soft:#f5d78e;
+    --cream:#f7f0dd;
+    --cream-dim:#cfc4a8;
+    --ember:#c96f2e;
+    --card:#1e323f;
+    --line:rgba(232,182,76,.28);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--navy);
+    color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;
+    background:
+      radial-gradient(700px 420px at 50% -80px, rgba(232,182,76,.22), transparent 65%),
+      radial-gradient(500px 500px at 90% 110%, rgba(201,111,46,.16), transparent 60%),
+      radial-gradient(420px 420px at 5% 90%, rgba(232,182,76,.08), transparent 60%);
+    pointer-events:none;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px;position:relative}
+  header{padding:26px 0 0}
+  .brand{
+    color:var(--cream);text-decoration:none;
+    font-weight:800;letter-spacing:.22em;font-size:.82rem;
+  }
+  .brand span{color:var(--gold)}
+  .brand small{display:block;letter-spacing:.14em;font-weight:500;color:var(--cream-dim);font-size:.68rem;margin-top:4px}
+  .hero{text-align:center;padding:64px 0 30px}
+  .eyebrow{
+    display:inline-block;
+    font-size:.72rem;letter-spacing:.3em;font-weight:700;color:var(--gold);
+    border:1px solid var(--line);border-radius:999px;padding:8px 16px;
+    background:rgba(232,182,76,.07);
+  }
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(2.6rem,7.5vw,4.8rem);
+    line-height:1.05;margin:26px 0 14px;font-weight:700;
+  }
+  h1 em{font-style:italic;color:var(--gold-soft)}
+  .lede{max-width:620px;margin:0 auto;color:var(--cream-dim);font-size:1.08rem}
+  .lede strong{color:var(--cream);font-weight:600}
+  .count{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+    max-width:760px;margin:44px auto 0;
+  }
+  .cell{
+    background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+    border:1px solid var(--line);border-radius:18px;
+    padding:26px 8px 20px;
+  }
+  .num{
+    font-family:Georgia,serif;
+    font-size:clamp(2.4rem,8vw,4rem);line-height:1;
+    color:var(--gold-soft);
+    font-variant-numeric:tabular-nums;
+  }
+  .lbl{font-size:.68rem;letter-spacing:.28em;color:var(--cream-dim);margin-top:10px;text-transform:uppercase}
+  .landing{
+    max-width:760px;margin:34px auto 0;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:18px 6px;text-align:center;
+    font-size:.95rem;color:var(--cream-dim);
+  }
+  .landing strong{color:var(--cream)}
+  .landing .dot{color:var(--gold);padding:0 8px}
+  section{padding:64px 0 10px}
+  h2{
+    font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,2.4rem);
+    line-height:1.15;margin-bottom:14px;
+  }
+  h2 em{font-style:italic;color:var(--gold-soft)}
+  .story{max-width:680px}
+  .story p{color:var(--cream-dim);margin-bottom:16px;font-size:1.05rem}
+  .story p strong{color:var(--cream)}
+  .foods{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:14px;margin-top:26px;
+  }
+  .food{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:22px;transition:transform .25s ease,border-color .25s ease;
+  }
+  .food:hover{transform:translateY(-3px);border-color:rgba(232,182,76,.55)}
+  .food .rank{
+    font-family:Georgia,serif;color:var(--gold);
+    font-size:.85rem;letter-spacing:.2em;
+  }
+  .food h3{font-family:Georgia,serif;font-size:1.3rem;margin:8px 0 6px}
+  .food p{color:var(--cream-dim);font-size:.96rem}
+  .food .tag{
+    display:inline-block;margin-top:12px;font-size:.7rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--gold);
+    border:1px solid var(--line);border-radius:999px;padding:5px 10px;
+  }
+  .progress-wrap{max-width:680px;margin-top:8px}
+  .progress-top{display:flex;justify-content:space-between;font-size:.8rem;color:var(--cream-dim);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+  .progress-top strong{color:var(--gold-soft)}
+  .bar{height:10px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+  .bar i{
+    display:block;height:100%;width:0%;
+    background:linear-gradient(90deg,var(--ember),var(--gold));
+    border-radius:999px;transition:width 1s ease;
+  }
+  .note{
+    max-width:680px;margin:26px 0 0;color:var(--cream-dim);font-size:.95rem;
+    border-left:3px solid var(--gold);padding-left:16px;
+  }
+  footer{
+    text-align:center;padding:70px 0 46px;color:var(--cream-dim);font-size:.92rem;
+  }
+  footer a{color:var(--gold-soft);text-decoration:none;border-bottom:1px solid var(--line)}
+  footer .sig{font-family:Georgia,serif;font-style:italic;font-size:1.15rem;color:var(--cream);margin-bottom:8px}
+  .steam{position:absolute;left:50%;transform:translateX(-50%);bottom:0;width:120px;height:90px;pointer-events:none;opacity:.5}
+  .steam i{
+    position:absolute;bottom:0;width:10px;height:10px;border-radius:50%;
+    background:rgba(247,240,221,.35);filter:blur(6px);
+    animation:rise 4s ease-in-out infinite;
+  }
+  .steam i:nth-child(1){left:20px;animation-delay:0s}
+  .steam i:nth-child(2){left:52px;animation-delay:1.2s}
+  .steam i:nth-child(3){left:84px;animation-delay:2.3s}
+  @keyframes rise{
+    0%{transform:translateY(0) scale(1);opacity:0}
+    30%{opacity:.7}
+    100%{transform:translateY(-80px) scale(2.4);opacity:0}
+  }
+  @media (max-width:560px){
+    .count{grid-template-columns:repeat(2,1fr)}
+    .hero{padding-top:44px}
+    section{padding-top:44px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="https://lakshays.me/">LAKSHAY <span>SHARMA</span>
+      <small>ROOTED IN AMRITSAR. AT HOME IN TORONTO.</small>
+    </a>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">TORONTO &#8594; DOHA &#8594; AMRITSAR</span>
+    <h1>The Kulcha<br><em>Countdown</em></h1>
+    <p class="lede">One flight home, one city that raised me, and one plate I have been
+    dreaming about for months. I land in Amritsar at <strong>2:30 AM on February 7, 2027</strong>,
+    and the clock below is the only thing standing between me and a proper kulcha.</p>
+
+    <div class="count" role="timer" aria-live="off" aria-label="Time until landing in Amritsar">
+      <div class="cell"><div class="num" id="d">--</div><div class="lbl">Days</div></div>
+      <div class="cell"><div class="num" id="h">--</div><div class="lbl">Hours</div></div>
+      <div class="cell"><div class="num" id="m">--</div><div class="lbl">Minutes</div></div>
+      <div class="cell"><div class="num" id="s">--</div><div class="lbl">Seconds</div></div>
+    </div>
+
+    <div class="landing">
+      <strong>Sri Guru Ram Dass Jee International Airport (ATQ)</strong>
+      <span class="dot">&#10022;</span> 2:30 AM IST <span class="dot">&#10022;</span> February 7, 2027
+    </div>
+  </div>
+
+  <section>
+    <div class="story">
+      <h2>Why I am <em>counting</em></h2>
+      <p>Toronto is home now. It gave me a career, a routine, and winters that teach you
+      patience. But some hungers do not translate. You cannot DoorDash the smell of a
+      tandoor at 7 in the morning, or the sound of a steel plate landing on a wooden table
+      with butter melting into every crack of a kulcha.</p>
+      <p>So I booked the flight. Toronto to Doha, Doha to Amritsar, wheels down in the
+      dark at 2:30 in the morning. I will probably be the most awake person on that plane,
+      because every hour closer is one hour closer to home.</p>
+      <p><strong>This page is my countdown, and my promise to myself:</strong> the first
+      morning back, no meetings, no plans, no sensible schedule. Just the city, the food,
+      and the people I miss.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The first <em>bites</em></h2>
+    <p style="color:var(--cream-dim);max-width:680px">The list is short on purpose. These are
+    the ones I think about when Toronto gets quiet.</p>
+    <div class="foods">
+      <article class="food">
+        <div class="rank">01 / THE FIRST BITE</div>
+        <h3>Amritsari Kulcha</h3>
+        <p>Stuffed, crisped in the tandoor, drowned in white butter, with chole on the side.
+        This is the whole reason for the trip. Everything else is a bonus.</p>
+        <span class="tag">Morning one</span>
+      </article>
+      <article class="food">
+        <div class="rank">02 / THE CLASSIC</div>
+        <h3>Lassi</h3>
+        <p>Thick, cold, sweet, with a spoonful of malai on top. The glass is basically a meal,
+        and I would not have it any other way.</p>
+        <span class="tag">With the kulcha</span>
+      </article>
+      <article class="food">
+        <div class="rank">03 / THE GOLDEN HOUR</div>
+        <h3>Jalebi with Rabri</h3>
+        <p>Hot jalebis straight off the kadhai, folded into cool rabri. Best eaten standing
+        outside the shop, sugar on your fingers, no regrets.</p>
+        <span class="tag">Evening walk</span>
+      </article>
+      <article class="food">
+        <div class="rank">04 / THE HUMBLE ONE</div>
+        <h3>Langar at the Golden Temple</h3>
+        <p>Dal, roti, and kheer served to thousands, sitting shoulder to shoulder on the floor.
+        The simplest meal in the city, and somehow the best.</p>
+        <span class="tag">Sri Harmandir Sahib</span>
+      </article>
+      <article class="food">
+        <div class="rank">05 / THE CRUNCH</div>
+        <h3>Amritsari Fish</h3>
+        <p>Fish fried in a spiced besan batter, crisp outside and soft inside, with onions and
+        green chutney. Lawrence Road knows what it is doing.</p>
+        <span class="tag">Lunch run</span>
+      </article>
+      <article class="food">
+        <div class="rank">06 / THE LATE NIGHT</div>
+        <h3>Chicken, Amritsari Style</h3>
+        <p>Tandoori chicken the way only Amritsar makes it, smoky and unapologetic. The city
+        does not sleep early, and neither will I.</p>
+        <span class="tag">After dark</span>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="progress-wrap">
+      <h2>The wait, <em>so far</em></h2>
+      <div class="progress-top"><span>Countdown started<br>Nov 16, 2026</span><strong id="pct">0% there</strong><span>Landing<br>Feb 7, 2027</span></div>
+      <div class="bar"><i id="bar"></i></div>
+      <p class="note">Every second that ticks off this page is a second closer to butter
+      melting into a kulcha. Toronto, be good while I am gone. Amritsar, keep the tandoors hot.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="sig">See you soon, Amritsar.</p>
+    <p>Made with hunger in Toronto. <a href="https://lakshays.me/">Back to lakshays.me</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var TARGET = new Date("2027-02-07T02:30:00+05:30").getTime();
+  var START = new Date("2026-11-16T00:00:00-05:00").getTime();
+  var dEl = document.getElementById("d"),
+      hEl = document.getElementById("h"),
+      mEl = document.getElementById("m"),
+      sEl = document.getElementById("s"),
+      bar = document.getElementById("bar"),
+      pct = document.getElementById("pct");
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function tick(){
+    var now = Date.now();
+    var diff = TARGET - now;
+    if (diff <= 0){
+      dEl.textContent = "0"; hEl.textContent = "00"; mEl.textContent = "00"; sEl.textContent = "00";
+      pct.textContent = "Welcome home";
+      bar.style.width = "100%";
+      return;
+    }
+    var totalSeconds = Math.floor(diff / 1000);
+    var days = Math.floor(totalSeconds / 86400);
+    var hours = Math.floor((totalSeconds % 86400) / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+    dEl.textContent = days;
+    hEl.textContent = pad(hours);
+    mEl.textContent = pad(minutes);
+    sEl.textContent = pad(seconds);
+    var p = Math.max(0, Math.min(100, (now - START) / (TARGET - START) * 100));
+    bar.style.width = p.toFixed(1) + "%";
+    pct.textContent = p.toFixed(0) + "% there";
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
